@@ -10,7 +10,7 @@ import rosegraphics as rg
 
 def main():
     """ Calls the   TEST   functions in this module. """
-    # run_test_draw_circles()
+    run_test_draw_circles()
     # Un-comment the next lines when you are ready to use them.
     run_test_better_draw_circles()
     run_test_even_better_draw_circles()
@@ -149,13 +149,13 @@ def even_better_draw_circles(multiplier, n, center_x, center_y, color_in_quotati
         circle = rg.Circle(center_point, k * multiplier)
         circle.attach_to(window)
         circle.outline_color = color_in_quotations
-    window.render()
+        window.render(0.05)
     window.close_on_mouse_click()
     return circle
 
 
 def run_test_even_better_draw_circles():
-    even_better_draw_circles(12, 9, 200, 200, 'blue')
+    even_better_draw_circles(12, 145, 200, 200, 'blue')
 
 
 # ----------------------------------------------------------------------
