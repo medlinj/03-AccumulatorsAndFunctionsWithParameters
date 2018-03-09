@@ -12,7 +12,7 @@ def main():
     """ Calls the   TEST   functions in this module. """
     # run_test_draw_circles()
     # Un-comment the next lines when you are ready to use them.
-    # run_test_better_draw_circles()
+    run_test_better_draw_circles()
     run_test_even_better_draw_circles()
 
 # ----------------------------------------------------------------------
@@ -92,6 +92,11 @@ def draw_circles():
 #   better_draw_circles  and  run_test_better_draw_circles.
 # ----------------------------------------------------------------------
 
+def run_test_better_draw_circles():
+    expected = 12
+    print('Test expected:', expected)
+    better_draw_circles(12)
+
 
 def better_draw_circles(n):
     window = rg.RoseWindow()
@@ -105,10 +110,7 @@ def better_draw_circles(n):
     window.render()
     window.close_on_mouse_click()
 
-def run_test_better_draw_circles():
-    better_draw_circles(12)
-    better_draw_circles(25)
-    # expect to see 12 circles
+
 
 # ----------------------------------------------------------------------
 # DONE: 3.
